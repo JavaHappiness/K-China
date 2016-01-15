@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:background="@android:color/white">
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="10px"
+            android:layout_height="60px"
+            android:layout_marginBottom="20px"
+            android:layout_marginRight="20px"
+            android:layout_marginTop="20px"
+            android:background="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="100px"
+            android:layout_toRightOf="@id/line"
+            android:gravity="left|center_vertical"
+            android:text="漫画改编"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_more"
+            android:layout_width="wrap_content"
+            android:layout_height="100px"
+            android:layout_alignParentRight="true"
+
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="2px"
+                android:layout_height="40px"
+                android:layout_marginBottom="30px"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="30px"
+                android:background="@color/background_window" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100px"
+                android:layout_marginRight="20px"
+                android:layout_toRightOf="@id/line"
+                android:gravity="left|center_vertical"
+                android:text="更多"
+                android:textColor="#80000000"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <cn.guLang.customview.GridViewWithHeaderAndFooter
+            android:id="@+id/gridView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tv_title"
+            android:numColumns="2" />
+
+
+    </RelativeLayout>
+</LinearLayout>

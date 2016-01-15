@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "F:\\Android\\OpenSource\\vitamio-sample\\vitamio\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\libarm.so",
+        "source": "F:\\Android\\OpenSource\\vitamio-sample\\vitamio\\build\\intermediates\\bundles\\debug\\res\\raw\\libarm.so"
+    },
+    {
+        "merged": "F:\\Android\\OpenSource\\vitamio-sample1\\vitamio\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\libarm.so",
+        "source": "F:\\Android\\OpenSource\\vitamio-sample1\\vitamio\\build\\intermediates\\bundles\\debug\\res\\raw\\libarm.so"
+    }
+]

@@ -1,0 +1,56 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.android.databinding'
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+    dataBinding {
+        enabled = true
+    }
+    defaultConfig {
+        applicationId "cn.guLang.china"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:design:23.1.1'
+    compile 'com.android.support:cardview-v7:23.1.1'
+    compile project(':AndroidAsync')
+    compile files('libs/ion-2.1.6.jar')
+    compile files('libs/gson-2.5.jar')
+    compile files('libs/kenburnsview-1.0.6.jar')
+    compile files('libs/photo-view.jar')
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile project(':adapter')
+    /*https://github.com/JakeWharton/butterknife*/
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile files('libs/commonutils.jar')
+    /*https://github.com/ksoichiro/Android-ObservableScrollView/blob/master/docs/quick-start/dependencies.md*/
+    compile 'com.github.ksoichiro:android-observablescrollview:1.6.0'
+    compile 'com.etsy.android.grid:library:1.0.5'
+    /*https://github.com/saiwu-bigkoo/Android-PickerView*/
+    compile 'com.bigkoo:pickerview:2.0.7'
+    compile project(':circualreveal')
+    compile project(':animator')
+    compile files('libs/ShareSDK-Core-2.6.4.jar')
+    compile files('libs/ShareSDK-QQ-2.6.4.jar')
+    compile files('libs/ShareSDK-QZone-2.6.4.jar')
+    compile files('libs/ShareSDK-ShortMessage-2.6.4.jar')
+    compile files('libs/ShareSDK-SinaWeibo-2.6.4.jar')
+    compile files('libs/ShareSDK-Wechat-2.6.4.jar')
+    compile files('libs/ShareSDK-Wechat-Core-2.6.4.jar')
+    compile files('libs/ShareSDK-Wechat-Moments-2.6.4.jar')
+    compile project(':vitamio')
+}

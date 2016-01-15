@@ -1,0 +1,1 @@
+include ':app', ':AndroidAsync', ':adapter', ':circualreveal', ':animator', ':autolayout', ':vitamio'

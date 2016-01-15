@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mblack"
+    android:fitsSystemWindows="true"
+    app:statusBarBackground="@color/mblack">
+
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.design.widget.CollapsingToolbarLayout
+        android:id="@+id/collapsing_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        app:contentScrim="?attr/colorPrimary"
+        app:expandedTitleMarginEnd="64dp"
+        app:expandedTitleMarginStart="48dp"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_collapseMode="pin"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <TextView
+                android:id="@+id/back"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/actionbar_back"
+                android:paddingRight="10dp" />
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.CollapsingToolbarLayout>
+
+
+    <RadioGroup
+        android:id="@+id/rg_group"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/mblack"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_edit"
+            style="@style/image_text"
+            android:checked="true"
+            android:drawablePadding="5dp"
+            android:drawableTop="@mipmap/icon_post_image"
+            android:text="编辑" />
+
+        <RadioButton
+            android:id="@+id/rb_down"
+            style="@style/image_text"
+            android:checked="false"
+            android:drawablePadding="5dp"
+            android:drawableTop="@mipmap/icon_down_image"
+            android:text="下载" />
+
+        <RadioButton
+            android:id="@+id/rb_collect"
+            style="@style/image_text"
+            android:drawablePadding="5dp"
+            android:drawableTop="@mipmap/icon_collect_image"
+            android:text="收藏" />
+
+        <RadioButton
+            android:id="@+id/rb_share"
+            style="@style/image_text"
+            android:drawablePadding="5dp"
+            android:drawableTop="@mipmap/icon_share_image"
+            android:text="分享" />
+    </RadioGroup>
+
+</android.support.design.widget.CoordinatorLayout>
